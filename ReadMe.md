@@ -6,9 +6,6 @@
 // import sql registration.sql in music_player -> database
 
 // use qwe@gmail.com and "qwe" as password
-//homepage
-![HOMEPAGE](m1.png)
-
 //login page
 ![LOGIN_PAGE](m4.png)
 
