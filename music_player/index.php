@@ -12,15 +12,15 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Music Player Project</title>
-    <link rel="stylesheet" href="/projects/music2/music_player/font-awesome/css/all.min.css">
-    <link rel="stylesheet" href="/projects/music2/music_player/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="shortcut icon" href="../H_IMGAES/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/styles.css">
-    <script src="/projects/music2/music_player/font-awesome/js/all.min.js"></script>
-    <script src="/projects/music2/music_player/js/jquery-3.6.0.min.js"></script>
-    <script src="/projects/music2/music_player/js/popper.min.js"></script>
-    <script src="/projects/music2/music_player/js/bootstrap.min.js"></script>
-    <script src="/projects/music2/music_player/js/script.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="font-awesome/js/all.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script defer  src="js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
