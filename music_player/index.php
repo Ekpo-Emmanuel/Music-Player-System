@@ -383,7 +383,6 @@ session_start();
                         </div>
                         <div class="m_begi">
                             <ul class="" id="music-list">
-                                <img src="/projects/music2/music_player/dashboard/0_kulosa.jpg" alt="">
                                 <?php 
                                 $music = $conn->query('SELECT * FROM `music_list` order by title asc');
                                 while($row = $music->fetch_assoc()):
