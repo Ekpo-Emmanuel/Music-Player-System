@@ -1,11 +1,12 @@
-// create database called "mp_db" 
-// import sql mp_db.sql in music_player -> database
+## Getting Started
+- create database called "mp_db" 
+-- import ```mp_db.sql``` in music_player -> database
 
 
-// create database called "music" 
-// import sql registration.sql in music_player -> database
+## create database in called ```music``` 
+- import sql registration.sql in music_player -> database
 
-// use qwe@gmail.com and "qwe" as password
+## use ```qwe@gmail.com``` and ```qwe``` as password
 //login page
 ![LOGIN_PAGE](m4.png)
 
