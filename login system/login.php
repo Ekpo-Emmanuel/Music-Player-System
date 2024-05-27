@@ -1,6 +1,12 @@
 <?php
 
-if(isset($_POST["submit"])) {
+if(isset($_COOKIE['login'])) {
+    require_once("config.php");
+    require_once("functions1.php");
+
+    handleCookie($conn, $_COOKIE['login']);
+} 
+elseif(isset($_POST["submit"])) {
 
     $name = $_POST["email"];
     $password = $_POST["password"];
@@ -9,16 +15,11 @@ if(isset($_POST["submit"])) {
     require_once("functions1.php");
 
     if(emptyInputLogin($name, $password) !== FALSE) {
-        header("location: login.php?error=emptyInput");
-        exit();
+            header("location: login.php?error=emptyInput");
+            exit();
     }
-
+    
     loginUser($conn, $name, $password);
-}
-else 
-{
-    // header("location: login.php");
-    // exit();
 }
 
 ?>

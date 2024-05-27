@@ -130,6 +130,16 @@ function emptyInputLogin($name, $password) {
      return $result;
 }
 
+function handleCookie($conn, $name) {
+    $uidExists = uidExists($conn, $name, $name);
+    session_start();
+    $_SESSION["username"] = $uidExists["username"];
+    $_SESSION["email"] = $uidExists["email"];
+    header("location: ../music_player/index.php");
+    exit();
+}
+
+
 
 function loginUser($conn, $name, $password) {
     $uidExists = uidExists($conn, $name, $name);
@@ -149,9 +159,12 @@ function loginUser($conn, $name, $password) {
         session_start();
         $_SESSION["username"] = $uidExists["username"];
         $_SESSION["email"] = $uidExists["email"];
+
+        if(isset($_POST['remember'])) {
+            setcookie('login', $uidExists["email"], time() + 60 * 10, '/');
+        }
         header("location: ../music_player/index.php");
         exit();
     }
-
 }
 
